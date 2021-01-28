@@ -46,6 +46,7 @@ const Rating = ({rating}) => {
 };
 
 export const CardHome = ({title, info, noHeader, noFooter, book}) => {
+  // console.log('url: ', info.url);
   return (
     <View style={styles.cardContainer}>
       {!noHeader && (
@@ -60,8 +61,7 @@ export const CardHome = ({title, info, noHeader, noFooter, book}) => {
           <Image
             style={styles.cardAvatar}
             source={{
-              uri:
-                'https://images.theconversation.com/files/304957/original/file-20191203-66986-im7o5.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=926&fit=clip',
+              uri: info.url,
             }}
           />
           <View style={styles.cardLeftSide}>
@@ -143,6 +143,8 @@ const HomeScreen = () => {
             time: 'Sunday, May 15th at 8:00 PM',
             address: '570, Lê Tấn Bê, F.An Lac, Q. Bình Tân',
             detail: '570, Lê Tấn Bê, F.An Lac, Q. Bình Tân',
+            url:
+              'https://images.theconversation.com/files/304957/original/file-20191203-66986-im7o5.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=926&fit=clip',
           }}
         />
         <CardHome
@@ -155,6 +157,8 @@ const HomeScreen = () => {
             isLike: true,
             rating: 4,
             tag: 'Wellness',
+            url:
+              'https://i.ibb.co/XJTBdpT/48063057-2520228918050397-2981005494413426688-o.jpg',
           }}
         />
       </View>

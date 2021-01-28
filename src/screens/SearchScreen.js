@@ -122,6 +122,8 @@ const ListCard = () => {
           isLike: true,
           rating: 4,
           tag: 'Wellness',
+          url:
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBvYM1uBz2gzlcOYWCZQYAJfUAvwZRO6d4SQ&usqp=CAU',
         }}
       />
       <CardHome
@@ -137,6 +139,8 @@ const ListCard = () => {
           isLike: true,
           rating: 4,
           tag: 'Wellness',
+          url:
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJan_IYh0AVBoQqnMX7CpizojZ6cPlOJqVlA&usqp=CAU',
         }}
       />
     </View>
